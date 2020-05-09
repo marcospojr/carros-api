@@ -28,7 +28,6 @@ public class FirebaseStorageService {
             FirebaseOptions options = new FirebaseOptions.Builder()
                     .setCredentials(GoogleCredentials.fromStream(in))
                     .setStorageBucket("carros-f6f39.appspot.com")
-                    .setDatabaseUrl("https://carros-f6f39.firebaseio.com")
                     .build();
 
             FirebaseApp.initializeApp(options);
