@@ -14,6 +14,8 @@ public class UploadController {
     @Autowired
     private FirebaseStorageService uploadService;
 
+//    Passando parametro por parametro
+
 //    @PostMapping("/upload")
 //    public ResponseEntity upload(@RequestParam String fileName, @RequestParam String base64) {
 //
@@ -21,6 +23,8 @@ public class UploadController {
 //
 //        return ResponseEntity.ok(s);
 //    }
+
+//    Json
 
     @PostMapping
     public ResponseEntity upload(@RequestBody UploadInput uploadInput) throws IOException {
