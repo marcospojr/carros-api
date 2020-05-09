@@ -1,4 +1,4 @@
-package com.marcosjr.carros.api.security.jwt;
+package com.marcosjr.carros.api.infra.security.jwt;
 
 import lombok.Data;
 

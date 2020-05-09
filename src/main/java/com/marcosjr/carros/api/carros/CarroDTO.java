@@ -1,13 +1,7 @@
-package com.marcosjr.carros.domain.dto;
+package com.marcosjr.carros.api.carros;
 
-import com.marcosjr.carros.domain.Carro;
 import lombok.Data;
 import org.modelmapper.ModelMapper;
-
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
 
 @Data
 public class CarroDTO extends Carro {

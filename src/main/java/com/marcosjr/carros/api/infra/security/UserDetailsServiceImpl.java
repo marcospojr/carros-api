@@ -1,7 +1,7 @@
-package com.marcosjr.carros.api.security;
+package com.marcosjr.carros.api.infra.security;
 
-import com.marcosjr.carros.domain.User;
-import com.marcosjr.carros.domain.UserRepository;
+import com.marcosjr.carros.api.usuarios.User;
+import com.marcosjr.carros.api.usuarios.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;

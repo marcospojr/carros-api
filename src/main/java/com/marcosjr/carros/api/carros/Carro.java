@@ -1,4 +1,4 @@
-package com.marcosjr.carros.domain;
+package com.marcosjr.carros.api.carros;
 
 import lombok.*;
 

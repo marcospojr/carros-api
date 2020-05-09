@@ -1,6 +1,6 @@
-package com.marcosjr.carros.api.security.jwt;
+package com.marcosjr.carros.api.infra.security.jwt;
 
-import com.marcosjr.carros.domain.User;
+import com.marcosjr.carros.api.usuarios.User;
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.SignatureAlgorithm;

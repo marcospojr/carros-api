@@ -1,8 +1,8 @@
-package com.marcosjr.carros.api.security.jwt;
+package com.marcosjr.carros.api.infra.security.jwt;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.marcosjr.carros.domain.User;
-import com.marcosjr.carros.domain.dto.UserDTO;
+import com.marcosjr.carros.api.usuarios.User;
+import com.marcosjr.carros.api.usuarios.UserDTO;
 import org.springframework.http.HttpStatus;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.BadCredentialsException;
