@@ -1,19 +1,16 @@
-package com.marcosjr.carros.api;
+package com.marcosjr.carros.api.carros;
 
 import com.marcosjr.carros.domain.Carro;
 import com.marcosjr.carros.domain.CarroService;
 import com.marcosjr.carros.domain.dto.CarroDTO;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.access.annotation.Secured;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 
-import javax.swing.text.html.Option;
 import java.net.URI;
 import java.util.List;
-import java.util.Optional;
 
 @RestController
 @RequestMapping("/api/v1/carros")
