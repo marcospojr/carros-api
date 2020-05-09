@@ -1,4 +1,4 @@
-package com.marcosjr.carros.domain.upload;
+package com.marcosjr.carros.api.upload;
 
 import com.google.auth.oauth2.GoogleCredentials;
 import com.google.cloud.storage.Acl;
@@ -7,17 +7,12 @@ import com.google.cloud.storage.Bucket;
 import com.google.firebase.FirebaseApp;
 import com.google.firebase.FirebaseOptions;
 import com.google.firebase.cloud.StorageClient;
-import com.marcosjr.carros.api.upload.UploadInput;
-import com.marcosjr.carros.api.upload.UploadOutput;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.PostConstruct;
-import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
-import java.net.URL;
 import java.util.Base64;
-import java.util.concurrent.TimeUnit;
 
 //https://firebase.google.com/docs/storage/admin/start
 @Service
@@ -26,13 +21,13 @@ public class FirebaseStorageService {
     @PostConstruct
     private void init() throws IOException {
         if (FirebaseApp.getApps().isEmpty()) {
-            InputStream in = FirebaseStorageService.class.getResourceAsStream("path/to/serviceAccountKey.json");
+            InputStream in = FirebaseStorageService.class.getResourceAsStream("/serviceAccountKey.json");
 
             System.out.println(in);
 
             FirebaseOptions options = new FirebaseOptions.Builder()
                     .setCredentials(GoogleCredentials.fromStream(in))
-                    .setStorageBucket("gs://carros-f6f39.appspot.com/")
+                    .setStorageBucket("carros-f6f39.appspot.com/")
                     .setDatabaseUrl("https://carros-f6f39.firebaseio.com")
                     .build();
 

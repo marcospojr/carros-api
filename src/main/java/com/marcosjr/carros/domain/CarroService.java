@@ -3,6 +3,8 @@ package com.marcosjr.carros.domain;
 import com.marcosjr.carros.api.exception.ObjectNotFoundException;
 import com.marcosjr.carros.domain.dto.CarroDTO;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 import org.springframework.util.Assert;
 
